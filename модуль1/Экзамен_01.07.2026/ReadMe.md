@@ -7,7 +7,7 @@
 
 npm -y init
 
-npm install bcryptjs multer body-parser cookie-parser express-session dotenv express mysql2 bcrypt helmet csurf ejs  uuid express-validator 
+npm install pg bcryptjs multer body-parser cookie-parser express-session dotenv express mysql2 bcrypt helmet csurf ejs  uuid express-validator 
 
 это на всякий случай
 
