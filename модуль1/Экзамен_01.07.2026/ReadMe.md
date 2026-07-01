@@ -19,19 +19,33 @@ pm2 start server.js --name demo.bobbyhost.ru
 
 
 Дополнительно: 
+
 ипортировал дамп базы:
+
  PGPASSWORD='мой_пароль' psql -U demo_demo -d demo_demo -h localhost -f /home/demo/sites/demo.bobbyhost.ru/1.sql
+ 
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 CREATE TABLE
+
 INSERT 0 2
+
 INSERT 0 6
+
 INSERT 0 2
+
 INSERT 0 10
 INSERT 0 36
 INSERT 0 30
