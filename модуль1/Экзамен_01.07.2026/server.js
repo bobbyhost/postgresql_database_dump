@@ -3,13 +3,13 @@ const { Client } = require('pg');
 const app = express();
 const PORT = 3008;
 
-// ----- ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ (простейшее) -----
+// ----- ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ (запилил попроще) -----
 const db = new Client({
     host: 'localhost',
     port: 5432,
-    user: 'postgres',          // мой реальный пользователь я  сделал в примере https://demo.bobbyhost.ru
-    password: 'ваш_пароль',    // мой реальный паролья я сделал в примере в примере https://demo.bobbyhost.ru
-    database: 'module1_db'
+    user: 'bobby_jones',          // мой реальный пользователь я  сделал в примере https://demo.bobbyhost.ru
+    password: 'мой пароль',    // мой реальный паролья я сделал в примере в примере https://demo.bobbyhost.ru
+    database: 'bobby_jones'
 });
 db.connect(); // подключаемся сразу
 
@@ -100,7 +100,7 @@ app.delete('/api/products/:id', async (req, res) => {
     }
 });
 
-// ----- ОТДАЁМ HTML-СТРАНИЦУ (ВСЁ В ОДНОМ ФАЙЛЕ) -----
+// ----- ОТДАЁМ HTML-СТРАНИЦУ (ВСЁ В ОДНОМ ФАЙЛЕ не хочу делать паги, потому что будут ошибки в синтаксисе падмэ жпг) -----
 app.get('/', (req, res) => {
     res.send(`
 <!DOCTYPE html>
